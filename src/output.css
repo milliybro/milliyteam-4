@@ -1000,6 +1000,10 @@ video {
   max-width: 24rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -1556,6 +1560,14 @@ video {
   gap: 47px;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1886,6 +1898,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-b {
@@ -2367,6 +2383,34 @@ video {
   padding-top: 80px;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-\[128px\] {
+  padding-bottom: 128px;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2421,6 +2465,10 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -2571,6 +2619,22 @@ video {
   line-height: 1;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
+}
+
+.leading-\[72px\] {
+  line-height: 72px;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
 .text-\[\#0D1317\] {
   --tw-text-opacity: 1;
   color: rgb(13 19 23 / var(--tw-text-opacity));
@@ -2616,6 +2680,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(255 192 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3070,8 +3139,27 @@ video {
     display: flex;
   }
 
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .sm\:text-left {
     text-align: left;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .sm\:underline {
@@ -3082,6 +3170,20 @@ video {
 @media (min-width: 800px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -3112,6 +3214,11 @@ video {
 
   .lg\:bg-\[url\(\'\/images\/home\/hero\.png\'\)\] {
     background-image: url('/images/home/hero.png');
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   :is(.dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover) {
