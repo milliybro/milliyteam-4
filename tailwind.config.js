@@ -15,6 +15,7 @@ module.exports = {
       primary: "#FFC000",
       secondary: "#F2F3F7",
       white: "white",
+      grey1: "rgba(57, 65, 73, 0.50)",
       grey: "grey",
       blue: "blue",
       black: "black",
@@ -22,7 +23,9 @@ module.exports = {
       bg_pr: "#FAFAFA",
       bg_second: "rgba(245, 138, 7, 0.10)",
       bl_gradient: "#0C0926",
-      input: "#DBDEE7,"
+      input: "#DBDEE7,",
+      tab: "rgba(6, 50, 85, 0.30),",
+
     },
     container: {
       padding: "20px",
