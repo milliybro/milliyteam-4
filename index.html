@@ -5,11 +5,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Finsweet</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="src/output.css" />
 </head>
 
 <body>
-  <nav class="navbar fixed w-full z-20 left-0 top-0 m-auto bg-white transition-all duration-1000">
+  <!-- backtop -->
+  <img class="fixed bottom-3 right-10 open-team cursor-pointer z-40 w-20 h-20 animate-bounce" src="images/home/team.png"
+    alt="">
+  <div
+    class="team-bg hidden fixed justify-center items-center bg-black bg-opacity-80 z-40  w-screen top-0 left-0 h-screen close-team">
+    <p class="close-team absolute top-2 cursor-pointer right-6 text-white text-2xl">x</p>
+  </div>
+
+  <div class="team hidden fixed title z-50 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+    <img class="rounded-full w-28" src="images/home/photo_2023-08-07_12-24-16.jpg" alt="">
+    <h1 class="text-black h-6  rounded-full rounded-bl-none bg-secondary ">
+      Milliy Teamga xush kelibsiz! <sub class="text-[#53d153]"> now .</sub>
+    </h1>
+  </div>
+  <!-- backtop end -->
+  <div
+    class="modal-bg hidden fixed justify-center items-center bg-black bg-opacity-80 z-50  w-screen top-0 left-0 h-screen close-modal">
+    <p class="close-modal absolute top-2 cursor-pointer right-6 text-white text-2xl">x</p>
+  </div>
+
+  <div class="modal hidden fixed title w-[660px] h-[315px]  z-[100] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+    <iframe width="760" height="415" src="https://www.youtube.com/embed/aEr6K1bwIVs" title="YouTube video player"
+      frameborder="2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <nav class="navbar fixed w-full z-30 left-0 top-0 m-auto bg-white transition-all duration-1000">
     <div class="max-w-screen-xl container mx-auto m-auto flex justify-between items-center py-5">
       <h3 class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><a href="index.html"><img
             src="images/home/Logo.svg"></a></h3>
@@ -27,7 +55,7 @@
               href="pages/contact.html">Contact us</a></li>
         </ul>
         <a class=" hidden cursor-pointer mx-4 bg-bg_second sm:inline-block  lg:ml-auto lg:mr-3  py-[18px] px-8 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-semibold  rounded-[31px] transition duration-200 ms-10"
-          href="#">Clone project</a>
+          href="https://github.com/milliybro/milliyteam-4" download="Milliy-team4 project">Clone project</a>
         <div class="lg:hidden">
           <button class="navbar-burger flex items-center text-blue p-3">
             <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +67,7 @@
       </div>
     </div>
   </nav>
-  <div class="navbar-menu relative z-50 hidden ">
+  <div class="navbar-menu relative z-40 hidden ">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 transition ease-in-out delay-150"></div>
     <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ">
       <div class="flex items-center mb-8">
@@ -118,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section id="help" class="bg-white">
+    <section id="help" class="bg-white" data-aos="fade-up">
       <div class="max-w-screen-xl container mx-auto m-auto">
         <h1 class="text-5xl font-semibold pt-24 w-[50%]">We help more than 1500 companies from all sectors</h1>
         <p class="text-[#5B5B5B] text-lg font-medium w-[50%] pt-[27px] pb-16">Lorem ipsum dolor sit amet, consectetur
@@ -158,7 +186,7 @@
         </div>
       </div>
     </section>
-    <section id="features" class="bg-[#DCEAF5]">
+    <section id="features" class="bg-[#DCEAF5]" data-aos="fade-up">
       <div class="max-w-screen-xl container mx-auto m-auto py-24">
         <div class="features__header grid grid-cols-1 lg:grid-cols-2 gap-10 pb-16">
           <h2 class="text-[#0D1317] text-4xl font-semibold">We are building software solution that solves your business
@@ -190,10 +218,10 @@
         </div>
       </div>
     </section>
-    <section id="about" class="py-24">
+    <section id="about" class="py-24" data-aos="fade-up">
       <div class="max-w-screen-xl container mx-auto m-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[47px]">
-          <div class="about__left pt-[70px]">
+          <div class="about__left pt-[70px]" data-aos="fade-right">
             <h2 class="text-[#0D1317] text-5xl font-semibold">The energy of a start-up combined with 30 years of
               experience.</h2>
             <p class="text-[#5B5B5B] text-lg font-medium pt-8 pb-12">
@@ -215,8 +243,10 @@
               </div>
             </div>
           </div>
-          <div class=" group w-full relative">
-            <img src="images/home/Circle.svg" class="absolute z-10 -right-14 -top-14" alt="">
+          <div class=" group w-full relative " data-aos="fade-left">
+            <img src="images/home/Circle.svg"
+              class="hover:rotate-90 transition-colors animate-spin-slow duration-1000  absolute z-10 -right-14 -top-14"
+              alt="">
             <div class="relative overflow-hidden h-[670px] rounded-[20px]">
               <img class=" w-full object-cover h-[670px]" src="images/home/about.png" alt="">
               <div
@@ -227,7 +257,7 @@
         </div>
       </div>
     </section>
-    <section id="service" class="pb-32">
+    <section id="service" data-aos="fade-up" class="pb-32">
       <div class="max-w-screen-xl container mx-auto m-auto">
         <div class="service__card bg-[#EDF7FF] p-12">
           <div>
@@ -284,8 +314,8 @@
                   <div class="hidden opacity-0" id="message" role="tabpanel">
                     <div class="grid grid-cols-1 gap-[140px] pt-[80px] lg:grid-cols-2">
                       <div class="">
-                        <h2 class="text-[#0D1317] text-5xl font-semibold">Helping clients with research and strategy for
-                          their business</h2>
+                        <h2 class="text-[#0D1317] text-5xl font-semibold">Lorem ipsum dolor, sit amet consectetur
+                          adipisicing elit. Suscipit, ipsam!</h2>
                         <p class="text-[#5B5B5B] text-lg font-medium pt-[25px] pb-10">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit,
                           hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque. <br><br>
@@ -311,8 +341,8 @@
                   <div class="hidden opacity-0" id="settings" role="tabpanel">
                     <div class="grid grid-cols-1 gap-[140px] pt-[80px] lg:grid-cols-2">
                       <div class="">
-                        <h2 class="text-[#0D1317] text-5xl font-semibold">Helping clients with research and strategy for
-                          their business</h2>
+                        <h2 class="text-[#0D1317] text-5xl font-semibold">Lorem ipsum dolor sit amet consectetur
+                          adipisicing elit. Non, natus.</h2>
                         <p class="text-[#5B5B5B] text-lg font-medium pt-[25px] pb-10">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit,
                           hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque. <br><br>
@@ -342,7 +372,7 @@
         </div>
       </div>
     </section>
-    <section id="cta">
+    <section id="cta" data-aos="fade-up">
       <div class="max-w-screen-xxl container mx-auto m-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2">
           <div class="grid__left">
@@ -358,10 +388,10 @@
         </div>
       </div>
     </section>
-    <section id="video">
+    <section id="video" data-aos="fade-up">
       <div class="max-w-screen-xl container mx-auto m-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 py-32 ">
-          <div class="video__left px-[50px]">
+          <div class="video__left px-[50px]" data-aos="fade-right">
             <h2 class="text-[#0D1317] text-5xl font-semibold capitalize">Finsweet was a dream to work with</h2>
             <p class="text-[#5B5B5B] text-lg font-medium pt-6 pb-10">
               Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel. Pellentesque a arcu vitae diam
@@ -375,76 +405,114 @@
               </div>
             </div>
           </div>
-          <div class="video__right relative">
+          <div class="video__right relative" data-aos="fade-left">
             <img class="" src="images/home/video.png" alt="">
             <!-- Button trigger modal -->
-              <img class="absolute bottom-3 left-10 open-modal cursor-pointer" src="images/home/play.png" alt="">
+            <img class="absolute bottom-3 left-10 open-modal cursor-pointer" src="images/home/play.svg" alt="">
 
-            <!-- Modal -->
-            <div data-te-modal-init
-              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-              id="staticBackdrop" data-te-backdrop="static" data-te-keyboard="false" tabindex="-1"
-              aria-labelledby="staticBackdropLabel" aria-hidden="false">
-              <div data-te-modal-dialog-ref
-                class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
-                <div
-                  class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
-                  <div
-                    class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
-                    <!--Modal title-->
-                    <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
-                      id="exampleModalLabel">
-                      Modal title
-                    </h5>
-                    <!--Close button-->
-                    <button type="button"
-                      class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
-                      data-te-modal-dismiss aria-label="Close">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="h-6 w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
 
-                  <!--Modal body-->
-                  <div data-te-modal-body-ref class="relative p-4">...</div>
-
-                  <!--Modal footer-->
-                  <div
-                    class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
-                    <button type="button"
-                      class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
-                      data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
-                      Close
-                    </button>
-                    <button type="button"
-                      class="ml-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                      data-te-ripple-init data-te-ripple-color="light">
-                      Understood
-                    </button>
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="latest" class="bg-[#DCEAF5]" data-aos="fade-up">
+      <div class="max-w-screen-xl container mx-auto m-auto py-24">
+        <h1 class="text-5xl font-semibold capitalize text-[#0D1317] pb-16">Latest Blog & News</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div class=" bg-white rounded-t-[20px]">
+            <img src="images/home/help1.png" class="w-full rounded-none">
+            <div class="p-8">
+              <h4 class="text-2xl font-medium text-[#0D1317] pt-[33px] pb-[17px]">Why you have to digitalize in 2021
+              </h4>
+              <p class="text-[#5B5B5B] text-base font-medium pb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit
+                et,
+              </p>
+              <a class="flex text-base font-medium items-center gap-2 text-[#F58A07]" href="pages/blog.html">Learn More
+                <img src="images/home/arrow2.svg"></a>
             </div>
-
-            <div class="modal-bg hidden fixed justify-center items-center bg-black bg-opacity-80 z-40  w-screen top-0 left-0 h-screen close-modal">
-              <p class="close-modal absolute top-2 cursor-pointer right-6 text-white text-2xl">x</p>
+          </div>
+          <div class=" bg-white rounded-t-[20px]">
+            <img src="images/home/help2.png" class="w-full">
+            <div class="p-8">
+              <h4 class="text-2xl font-medium text-[#0D1317] pt-[33px] pb-[17px]">Our internal process and longerm
+                vision</h4>
+              <p class="text-[#5B5B5B] text-base font-medium pb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit
+                et,
+              </p>
+              <a class="flex text-base font-medium items-center gap-2 text-[#F58A07]  " href="pages/blog.html">Learn
+                More
+                <img src="images/home/arrow2.svg"></a>
             </div>
-
-            <div class="modal hidden fixed title w-[660px] h-[315px] bg-black z-50 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
-              <iframe width="760" height="415" src="https://www.youtube.com/embed/aEr6K1bwIVs" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class=" bg-white rounded-t-[20px]">
+            <img src="images/home/help3.png" class="w-full">
+            <div class="p-8">
+              <h4 class="text-2xl font-medium text-[#0D1317] pt-[33px] pb-[17px]">Helping the next generation of leaders
+              </h4>
+              <p class="text-[#5B5B5B] text-base font-medium pb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit
+                et,
+              </p>
+              <a class="flex text-base font-medium items-center gap-2 text-[#F58A07]  " href="pages/blog.html">Learn
+                More
+                <img src="images/home/arrow2.svg"></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main>
+  <footer class="bg-[#063255] text-white" data-aos="fade-up">
+    <div class="max-w-screen-xl container mx-auto m-auto py-[80px]">
+      <div class="grid grid-cols-1 gap-10  lg:grid-cols-3 ">
+        <div class="">
+          <h2 class="font-semibold text-3xl">{Finsweet</h2>
+          <h1 class="font-semibold text-4xl py-[32.7px]">Bespoke software solutions</h1>
+          <div class="footer__social flex gap-[16.88px]">
+            <img src="images/home/facebook.svg" alt="">
+            <img src="images/home/youtube.png" alt="">
+            <img src="images/home/instagram.svg" alt="">
+            <img src="images/home/twitter.svg" alt="">
+          </div>
+          <h5 class="text-base font-medium pt-20">© All rights reserved – Finsweet</h5>
+        </div>
+        <div class="flex justify-around">
+          <ul class="gap-4">
+            <h4 class="text-lg font-semibold pb-6">Company</h4>
+            <li class="font-medium text-base pb-4"><a href="pages/about.html">About Us</a></li>
+            <li class="font-medium text-base pb-4"><a href="pages/careers.html">Careers</a></li>
+            <li class="font-medium text-base pb-4"><a href="pages/services.html">Services</a></li>
+            <li class="font-medium text-base"><a href="pages/blog.html">Blog</a></li>
+          </ul>
+          <ul class="gap-4">
+            <h4 class="text-lg font-semibold pb-6">Connect</h4>
+            <li class="font-medium text-base pb-4">hi@finsweet.com</li>
+            <li class="font-medium text-base">+(123) 456-7890</li>
+          </ul>
+        </div>
+        <div class="ps-10">
+          <h3 class="text-lg font-semibold">Join Newsletter</h3>
+          <input
+            class="block border-none rounded-[31px] px-8 py-[18px] w-full mt-6 mb-4 text-grey1 placeholder:text-grey1"
+            type="text" placeholder="Type email here">
+          <button
+            class="text-lg font-semibold rounded-[31px] px-8 py-[18px] bg-[#F58A07] hover:bg-primary mb-[104px]">Subscribe</button>
+          <div class="privacy flex gap-8 justify-end">
+            <h5 class="text-base font-medium"><a href="pages/privacy.html">Privacy Policy</a></h5>
+            <h5 class="text-base font-medium"><a href="pages/privacy.html">Terms & Conditions</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js"></script>
   <script src="node_modules/@material-tailwind/html/scripts/tabs.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/team.js"></script>
 </body>
 
 
