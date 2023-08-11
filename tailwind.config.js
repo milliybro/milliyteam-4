@@ -29,6 +29,8 @@ module.exports = {
       bl_gradient: "#0C0926",
       input: "#DBDEE7,",
       tab: "rgba(6, 50, 85, 0.30),",
+      apply: "rgba(193, 228, 255, 0.30),",
+
 
     },
     container: {
