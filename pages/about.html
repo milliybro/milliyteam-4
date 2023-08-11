@@ -5,11 +5,25 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>About Us</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="../src/output.css" />
 </head>
 
 <body>
 	<header>
+
+		  <!-- backtop end -->
+		  <div
+		  class="modal-bg hidden fixed justify-center items-center bg-black bg-opacity-80 z-50  w-screen top-0 left-0 h-screen close-modal">
+		  <p class="close-modal absolute top-2 cursor-pointer right-6 text-white text-2xl">x</p>
+		</div>
+	 
+		<div class="modal hidden fixed title w-[660px] h-[315px]  z-[100] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+		  <iframe width="760" height="415" src="https://www.youtube.com/embed/aEr6K1bwIVs" title="YouTube video player"
+			 frameborder="2"
+			 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			 allowfullscreen></iframe>
+		</div>  
 		<nav class="navbar fixed w-full z-30 left-0 top-0 m-auto bg-white transition-all duration-1000">
 			<div class="max-w-screen-xl container mx-auto m-auto flex justify-between items-center py-5">
 			  <h3 class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><a href="../index.html"><img
@@ -309,8 +323,6 @@
 						<img class="" src="../images/home/video.png" alt="">
 						<!-- Button trigger modal -->
 						<img class="absolute bottom-3 left-10 open-modal cursor-pointer" src="../images/home/play.svg" alt="">
-
-
 					</div>
 				</div>
 			</div>
@@ -407,7 +419,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 	</footer>
 	<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js"></script>
 	<script src="node_modules/@material-tailwind/html/scripts/tabs.js"></script>
